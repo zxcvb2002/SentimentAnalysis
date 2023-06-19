@@ -16,19 +16,19 @@ struct ContentView: View {
         ZStack {
             switch sentiment {
             case .irrelevant:
-                Color.yellow
+                Color.gray
                     .ignoresSafeArea()
             case .negative:
                 Color.red
                     .ignoresSafeArea()
             case .neutral:
-                Color.yellow
+                Color.green
                     .ignoresSafeArea()
             case .positive:
                 Color.blue
                     .ignoresSafeArea()
             default:
-                Color.gray
+                Color.yellow
                     .ignoresSafeArea()
             }
             
@@ -44,7 +44,7 @@ struct ContentView: View {
                 }) {
                     Text("Analyze")
                         .font(.headline)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .padding()
                         .frame(width: 220, height: 60)
                         .cornerRadius(35)
@@ -54,10 +54,10 @@ struct ContentView: View {
                 
                 switch sentiment {
                 case .irrelevant:
-                    Image("😶")
+                    Text("😶")
                     Text("Irrelevant")
                         .fontWeight(.bold)
-                        .foregroundColor(.brown)
+                        .foregroundColor(.black)
                         .padding()
                 case .negative:
                     Text("😡")
@@ -69,7 +69,7 @@ struct ContentView: View {
                     Text("😐")
                     Text("Neutral")
                         .fontWeight(.bold)
-                        .foregroundColor(.mint)
+                        .foregroundColor(.brown)
                         .padding()
                 case .positive:
                     Text("🙂")
