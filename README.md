@@ -26,8 +26,8 @@ with open(csv_file_path, "r") as csv_file:
     next(csv_reader)
     
     for row in csv_reader:
-        emotion = row[2]
-        text_content = row[3]
+        emotion = row[index]
+        text_content = row[index]
 
         if emotion in folders:
             folder_path = os.path.join(output_folder, emotion)
