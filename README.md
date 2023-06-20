@@ -2,7 +2,7 @@
 
 CoreML & CreateML Practice using [Twitter Sentimental Analysis](https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis)
 
-# Data Classification
+# Training Data Classification
 
 ```.csv -> .txt```
 
@@ -39,6 +39,10 @@ with open(csv_file_path, "r") as csv_file:
 
 print("End")
 ```
+
+# Testing Data Classification
+
+Before securing validation...
 
 # Action
 
