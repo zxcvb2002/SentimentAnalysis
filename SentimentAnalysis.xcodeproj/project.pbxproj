@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8837DAA92A402D2C000D9F4D /* SentimentAnalysisModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8837DAA82A402D2C000D9F4D /* SentimentAnalysisModel.mlmodel */; };
 		8837DAAB2A403B30000D9F4D /* SentimentAnalysisModel.mlproj in Resources */ = {isa = PBXBuildFile; fileRef = 8837DAAA2A403B30000D9F4D /* SentimentAnalysisModel.mlproj */; };
+		888A651D2A4209F1001B7D1F /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888A651C2A4209F1001B7D1F /* UIApplication.swift */; };
 		889946002A0F583100D285D4 /* SentimentAnalysisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889945FF2A0F583100D285D4 /* SentimentAnalysisApp.swift */; };
 		889946022A0F583100D285D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889946012A0F583100D285D4 /* ContentView.swift */; };
 		889946042A0F583200D285D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889946032A0F583200D285D4 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		8837DAA82A402D2C000D9F4D /* SentimentAnalysisModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SentimentAnalysisModel.mlmodel; sourceTree = "<group>"; };
 		8837DAAA2A403B30000D9F4D /* SentimentAnalysisModel.mlproj */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SentimentAnalysisModel.mlproj; sourceTree = "<group>"; };
+		888A651C2A4209F1001B7D1F /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		889945FC2A0F583100D285D4 /* SentimentAnalysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SentimentAnalysis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		889945FF2A0F583100D285D4 /* SentimentAnalysisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalysisApp.swift; sourceTree = "<group>"; };
 		889946012A0F583100D285D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		888A651E2A420A3D001B7D1F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				889945FF2A0F583100D285D4 /* SentimentAnalysisApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		888A651F2A420A47001B7D1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8899460F2A0F5C1F00D285D4 /* SentimentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		888A65202A420A57001B7D1F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				888A651C2A4209F1001B7D1F /* UIApplication.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		888A65212A420A71001B7D1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				889946012A0F583100D285D4 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		889945F32A0F583100D285D4 = {
 			isa = PBXGroup;
 			children = (
@@ -57,13 +91,14 @@
 		889945FE2A0F583100D285D4 /* SentimentAnalysis */ = {
 			isa = PBXGroup;
 			children = (
+				888A651E2A420A3D001B7D1F /* App */,
+				888A651F2A420A47001B7D1F /* Model */,
+				888A65212A420A71001B7D1F /* View */,
+				888A65202A420A57001B7D1F /* Extension */,
+				889946052A0F583200D285D4 /* Preview Content */,
 				8837DAAA2A403B30000D9F4D /* SentimentAnalysisModel.mlproj */,
 				8837DAA82A402D2C000D9F4D /* SentimentAnalysisModel.mlmodel */,
-				8899460F2A0F5C1F00D285D4 /* SentimentModel.swift */,
-				889945FF2A0F583100D285D4 /* SentimentAnalysisApp.swift */,
-				889946012A0F583100D285D4 /* ContentView.swift */,
 				889946032A0F583200D285D4 /* Assets.xcassets */,
-				889946052A0F583200D285D4 /* Preview Content */,
 			);
 			path = SentimentAnalysis;
 			sourceTree = "<group>";
@@ -150,6 +185,7 @@
 				889946102A0F5C1F00D285D4 /* SentimentModel.swift in Sources */,
 				889946022A0F583100D285D4 /* ContentView.swift in Sources */,
 				8837DAA92A402D2C000D9F4D /* SentimentAnalysisModel.mlmodel in Sources */,
+				888A651D2A4209F1001B7D1F /* UIApplication.swift in Sources */,
 				889946002A0F583100D285D4 /* SentimentAnalysisApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SentimentAnalysis/Preview Content\"";
+				DEVELOPMENT_TEAM = 43222PSGBA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -291,7 +328,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SentimentAnalysis;
+				PRODUCT_BUNDLE_IDENTIFIER = Dez.SentimentAnalysis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -307,6 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SentimentAnalysis/Preview Content\"";
+				DEVELOPMENT_TEAM = 43222PSGBA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -319,7 +357,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.SentimentAnalysis;
+				PRODUCT_BUNDLE_IDENTIFIER = Dez.SentimentAnalysis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

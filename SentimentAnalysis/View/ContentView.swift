@@ -36,20 +36,12 @@ struct ContentView: View {
                 TextEditor(text: $inputText)
                     .frame(width: 250, height: 250)
                     .padding()
-                    .background(Color.white)
+                    .background()
                     .cornerRadius(15)
-                    
-                Button(action: {
-                    sentiment = SentimentModel().predictString(text: inputText)
-                }) {
-                    Text("Analyze")
-                        .font(.headline)
-                        .foregroundColor(.black)
-                        .padding()
-                        .frame(width: 220, height: 60)
-                        .cornerRadius(35)
-                }
-                
+                    .onChange(of: inputText) {
+                        sentiment = SentimentModel().predictString(text: $0)
+                    }
+
                 Spacer()
                 
                 switch sentiment {
@@ -82,6 +74,7 @@ struct ContentView: View {
                 }
             }
         }
+        .onAppear(perform: UIApplication.shared.hideKeyboard)
     }
 }
 
