@@ -47,7 +47,7 @@ Before securing validation...
 
 # Action
 
-https://github.com/zxcvb2002/SentimentAnalysis/assets/122873008/a79fc41a-6b9e-4716-a677-59f61da339ef
+https://github.com/zxcvb2002/SentimentAnalysis/assets/122873008/015248b0-a811-465a-b6aa-f38fd9fca159
 
 # Reference
 
