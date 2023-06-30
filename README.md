@@ -2,6 +2,8 @@
 
 CoreML & CreateML Practice using [Twitter Sentimental Analysis](https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis)
 
+[Private Notion Link](https://www.notion.so/dezxcvb/Sentimental-Analysis-dcb78a4d769c4069bb8b16dcfc513536?pvs=4)
+
 # Training Data Classification
 
 ```.csv -> .txt```
